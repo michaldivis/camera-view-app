@@ -1,6 +1,6 @@
-﻿using System;
+﻿using CameraViewApp.ViewModels;
+using CameraViewApp.Views;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace CameraViewApp
 {
@@ -10,7 +10,7 @@ namespace CameraViewApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new CameraPage(new CameraViewModel());
         }
 
         protected override void OnStart()
